@@ -1,0 +1,30 @@
+<h1>Getting started with nodejs on OSX Lion</h1>
+
+<h2>1. Install Homebrew/node</h2>
+<p>If you don't have Homebrew yet, it's time. It is a package manager that makes it easy to download and update packages on a Mac just seems to work better for installing the occasional package and to be more popular than MacPorts or Fink. Check out the <a href="https://github.com/mxcl/homebrew/wiki/installation">installation instructions</a>.</p>
+
+<p>Once you've installed homebrew, you just need to update it to ensure you get the latest version of the packages you want to download. Then it's a one line command to install node. At a command line, type:</p>
+
+brew update <br />
+brew install node
+
+<p>If you really don't want to install brew, there is an installer or you can build from source. More information is available on the <a href="http://nodejs.org/#download">node website</a>.</p>
+
+<p>Test your node installation by checking the version of node at the command line:</p>
+
+<p>node -v</p>
+
+<p>As long as it returns a version number and it is has an even number for the first decimal place (node uses semantic versioning with odd versions like 0.5 and 0.7 being unstable and 0.4 and 0.6 being stable production releases) you're good to go.</p>
+
+<h2>2. Installing NPM</h2>
+<p>To do anything useful with node, you're going to want to download the <a href="http://npmjs.org/">Node Package Manager</a>. NPM allows you to easily download an install the packages you need to manage. It's an indispensable tool for working with node.</p>
+
+<p>To install, in a terminal window just type:</p>
+
+curl http://npmjs.org/install.sh | sh
+
+<p>Then you'll need to add /usr/local/lib/node_modules to your path. Personally I set my path in my ~/.bash_profile. Once you've added the path, open a new terminal and check that your path contains the new directory:</p>
+
+echo $PATH
+
+<p>And that's it - you're ready to roll!</p>
